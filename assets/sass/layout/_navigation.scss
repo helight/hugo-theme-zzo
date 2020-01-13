@@ -156,9 +156,11 @@
 
   &__menu {
     @include flex-grow(1);
-    @include flexbox();
+    // @include flexbox();
     @include align-items(center);
     @include justify-content(flex-end);
+    display: -webkit-box;
+    padding-left: 40px;
     height: $grid_navbar_height;
 
     @media only screen and (max-width: 769px) {
@@ -167,7 +169,7 @@
 
     &-item {
       height: $grid_navbar_height;      
-      padding: 0.5rem;
+      padding: 30px;
       font-size: 1rem;
       font-family: $title-font;
       font-weight: 700;
